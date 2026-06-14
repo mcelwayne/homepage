@@ -1,0 +1,360 @@
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #080808;
+    background: linear-gradient(
+        to bottom,
+        #050505,
+        #0f0f0f,
+        #1a1a1a
+    );
+    color:white;
+    font-family: 'Arial', sans-serif;
+    margin:0;
+}
+button {
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    font-size:1rem;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background: #8B6B3f;
+}
+.explore-btn {
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    font-size:1rem;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    display: inline-block;
+    margin-top: 50px;
+}
+.explore-btn:hover { 
+    background: #8B6B3F;
+}
+.hero-buttons {
+   text-align: center;
+   
+}
+
+
+.line{    
+    text-align: center;
+    font-size: 1.5rem;
+    color:white;
+    top: -10%;
+    position: relative;
+}
+
+
+.line2 {
+    font-size: 1rem;
+    color:white;
+    top: -10%;
+    position: relative;
+}
+nav {
+    padding: 20px;
+   text-align: right;
+   
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    
+
+}
+
+
+.hero-text h1 {
+    font-family:"bodoni moda", serif;
+    font-size: 6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+.hero {
+    position: relative;
+    width:100%;
+    height: 700px;
+    overflow:hidden;
+}
+
+
+
+.hero-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-align: center;
+    height: 700px;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;   
+    width: 150px;
+    height: auto;
+    
+}
+#services {
+    padding: 100px 50px;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    scroll-margin-top: -50px;
+
+}
+#barber,
+#beauty,
+#brews {
+    width: 300px;
+    min-height: 625px;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+#barber p,
+#beauty p,
+#brews p {
+    flex-grow: 1;
+}
+#barber:hover,
+#beauty:hover,
+#brews:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 10px 25px rgba(255,255,255,0.1);
+}
+#services h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family:"bodoni moda", serif;
+}
+
+.service-img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+.about h2 {
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.about h2::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 2px;
+    background: #b08d57;
+    margin: 15px auto 0;
+}
+.about {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.about p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #b08d57;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.about-btn:hover{
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+.reviews {
+    text-align: center;
+    padding: 80px 20px;
+    background:#111;
+    box-sizing: border-box;
+}
+
+.reviews h2 {
+    font-size: 2rem;
+}
+.review-card{
+    background: #1a1a1a;
+    max-width:800px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    border:1px solid #333;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+.review-card:hover { 
+    transform: translateY(-5px);
+}
+.review-card p {
+    color: white;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.review-card h4 {
+    color: #b08d57;
+    margin-top: 15px;
+}
+.google-rating {
+    text-align: center;
+    margin: 25px 0 40px;
+    margin-bottom: 40px;
+}
+.google-rating h3 {
+    color: #b08d57;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.google-rating p {
+    color: #ccc;
+}
+.reviews-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #b08d57;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.footer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-section h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footer-section.social i{ 
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.footer-section.social i:hover {
+    transform: scale(1.2);
+}
+.fa-facebook {
+    color: #1877F2;
+}
+.fa-instagram {
+    color: #E4405F;
+}
+.copyright { 
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    #services {
+        grid-template-columns: 1fr;
+    }
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .about p{
+        font-size:1.1rem;
+        line-height: 1.6;
+    }
+    .hero-text {
+        position: static;
+        transform: none;
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .hero-text h1 {
+        font-size: 3.5rem;
+        line-height: 1;
+    }
+    .logo {
+        width: 100px;
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+    }
+    
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size:1.75;
+    }
+    .hero {
+        padding: 20px;
+    }
+    .reviews {
+        width: 100%;
+    }
+    .footer {
+        padding: 30px 15px;
+    }
+}
